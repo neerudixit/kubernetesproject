@@ -7,6 +7,6 @@ ADD https://www.free-css.com/assets/files/free-css-templates/download/page269/me
 WORKDIR /var/www/html
 RUN unzip meticulous.zip
 RUN cp -rvf meticulous/* .
-RUN rm -rf meticulous meticulous.zip
+RUN rm -rf meticulous  meticulous.zip
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
