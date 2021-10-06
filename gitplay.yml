@@ -1,6 +1,0 @@
-- hosts: all
-  tasks:
-      - name: Git playbook
-        copy:
-           src: /etc/fstab
-           dest: /tmp
