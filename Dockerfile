@@ -10,3 +10,4 @@ RUN cp -rvf templatemo_552_video_catalog/* .
 RUN rm -rf templatemo_552_video_catalog video-catalog.zip
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
+
