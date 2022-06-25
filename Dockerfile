@@ -10,4 +10,3 @@ RUN cp -rvf veggie-master/* .
 RUN rm -rf veggie-master veggie.zip
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
-
