@@ -1,5 +1,6 @@
 FROM centos:latest
 MAINTAINER nareshdixit23@gmail.com
+RUN mkdir abc
 RUN yum install -y httpd \
    zip \
    unzip
