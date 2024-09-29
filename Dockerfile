@@ -1,10 +1,9 @@
-FROM centos:latest
+FROM ubuntu:latest
 MAINTAINER nareshdixit23@gmail.com
-RUN mkdir abc bcd
-RUN yum install -y httpd \
+RUN apt install -y httpd \
    zip \
    unzip
-COPY /root/oxer.zip /var/www/html
+ADD https://www.free-css.com/assets/files/free-css-templates/download/page296/oxer.zip  /var/www/html
 WORKDIR /var/www/html
 RUN unzip oxer.zip
 RUN cp -rvf oxer-html/* .
